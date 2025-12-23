@@ -150,7 +150,7 @@ def track_person(video_path, predictor):
     run_meanshift(cap, track_window, roi_hist, use_grayscale=gray_mode)
 
 if __name__ == "__main__":
-    sam_checkpoint = r"D:/Amr/Materials/Fourth Year/ComputerVision/Labs/Lab7&8-Tracking/models/sam_vit_b_01ec64.pth"
+    sam_checkpoint = r"sam_vit_b_01ec64.pth"
     model = sam_model_registry["vit_b"](checkpoint=sam_checkpoint)
     predictor = SamPredictor(model)
 
